@@ -1,0 +1,23 @@
+<h1 class='text-center'>Add an article</h1>
+
+<%= form_for(@article) do |f| %>
+<div class="box">
+
+  <div class="form-group">
+    <%= f.label :title %>
+    <%= f.text_field :title, class: "form-control" %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :content %>
+    <%= f.text_area :content, size: "60x12", class: 'form-control' %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :image %>
+    <%= f.text_field :image, class: "form-control" %>
+  </div>
+
+  <%= f.submit class: 'btn btn-primary' %>
+</div>
+<% end %>

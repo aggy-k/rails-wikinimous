@@ -1,0 +1,8 @@
+<div class="box">
+  <% @articles.each do |article| %>
+    <h4><%= link_to article.title, article_path(article) %></h4>
+    <p><%= article.content[0..100] %></p>
+  <% end %>
+</div>
+
+<!-- how to limit the content to a certain number of letters -->
